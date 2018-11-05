@@ -58,6 +58,11 @@ function getExtractFee(ammount) {
   return comision;
 }
 
+// TODO implement
+function checkExtractPermission() {
+  return true;
+}
+
 function extractFromATM(ammount) {
   console.info("==== ==== ==== ==== ====");
   console.info("suma extrasa este: " + ammount);
