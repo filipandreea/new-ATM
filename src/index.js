@@ -6,30 +6,35 @@ document.getElementById("app").innerHTML = `
   for more info about Parcel.
 </div>
 `;
-// console.info(0);
 
-// function sayWelcome() {
-//   console.info("Salut " + prenume + ", bine ai venit la noi!");
-// }
+function learnVariables() {
+  console.info(0);
 
-// var nume = "Matei";
-// var prenume = "Nicolae";
-// var owner = "Matei's";
-// var msg1 = 'ai zis "Nick"?';
-// var msg2 = 'Nu, am zis "Nicolae"';
-// var template = `Text cu ghilimele " sau simple '`;
+  function sayWelcome() {
+    console.info("Salut " + prenume + ", bine ai venit la noi!");
+  }
 
-// console.debug("auzi...? dar cum te cheama? -" + prenume);
-// sayWelcome();
+  var nume = "Matei";
+  var prenume = "Nicolae";
+  var owner = "Matei's";
+  var msg1 = 'ai zis "Nick"?';
+  var msg2 = 'Nu, am zis "Nicolae"';
+  var template = `Text cu ghilimele " sau simple '`;
 
-// var skills = ["html", "css", "js"];
+  console.debug("auzi...? dar cum te cheama? -" + prenume);
+  sayWelcome();
 
-// prenume = "Nick";
+  var skills = ["html", "css", "js"];
 
-// console.info("toate variabilele au fost initializate");
-// console.log(nume);
-// console.debug("cum te cheama? -" + prenume);
-// sayWelcome();
+  prenume = "Nick";
+
+  console.info("toate variabilele au fost initializate");
+  console.log(nume);
+  console.debug("cum te cheama? -" + prenume);
+  sayWelcome();
+}
+
+//learnVariables();
 
 // schimb valutar
 
@@ -56,6 +61,11 @@ function getExtractFee(ammount) {
     comision = 2.5;
   }
   return comision;
+}
+
+// TODO implement
+function checkExtractPermission() {
+  return true;
 }
 
 function extractFromATM(ammount) {
