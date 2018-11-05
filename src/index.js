@@ -57,6 +57,7 @@ function getExtractFee(ammount) {
   }
   return comision;
 }
+
 function extractFromATM(ammount) {
   console.info("==== ==== ==== ==== ====");
   console.info("suma extrasa este: " + ammount);
@@ -72,9 +73,12 @@ function extractFromATM(ammount) {
     return 0;
   }
 
-  funds = funds - totalExtract;
+  funds -= totalExtract;
+  // atmFunds = atmFunds - ammount;
+  atmFunds -= ammount;
   console.info("comision aplicat: " + comision);
   console.info("sold curent: " + funds);
+
   console.info("==== ==== ==== ==== ====");
 }
 
@@ -83,6 +87,7 @@ extractFromATM(100000); //solduri insuficiente
 extractFromATM(3000);
 extractFromATM(3000);
 extractFromATM(100);
+extractFromATM(0);
 
 var x = 4 + 5;
 
